@@ -15,7 +15,7 @@ public class KeyInput extends KeyAdapter {
     @Override
     public void keyPressed(KeyEvent e) {
         int key = e.getKeyCode();
-        System.out.println(key);
+        
         for(int i=0; i < handler.object.size(); i++){
             GameObject tempObject = handler.object.get(i);
             if(tempObject.getId() == ID.Player){
@@ -29,6 +29,9 @@ public class KeyInput extends KeyAdapter {
                     tempObject.setVelX(-5);
             }
         }
+        
+        if(key == KeyEvent.VK_ESCAPE)
+        	System.exit(1);
     }
 
     @Override
