@@ -23,7 +23,7 @@ public class Spawn {
 			hud.setLevel(hud.getLevel()+1);
 			
 			if(hud.getLevel() == 2){
-				handler.addObject(new BasicEnemy(r.nextInt(Game.WIDTH-50),r.nextInt(Game.HEIGHT-50),ID.BasicEnemy,handler));
+				handler.addObject(new SmartEnemy(r.nextInt(Game.WIDTH-50),r.nextInt(Game.HEIGHT-50),ID.BasicEnemy,handler));
 			}
 		}
 		
