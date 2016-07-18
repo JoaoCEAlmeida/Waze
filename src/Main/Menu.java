@@ -24,7 +24,7 @@ public class Menu extends MouseAdapter {
 		int mx = e.getX();
 		int my = e.getY();
 		
-		//
+		
 		//state machine
 		if(game.gameState==STATE.Menu){
 			//play
