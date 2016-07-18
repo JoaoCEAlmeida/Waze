@@ -8,7 +8,7 @@ import java.util.Random;
 public class BossEnemy extends GameObject{
 
 	private Handler handler;
-	private int timer = 80;
+	private int timer = 60;
 	private int timer2 = 50;
 	Random r = new Random();
 	
